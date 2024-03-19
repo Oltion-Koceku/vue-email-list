@@ -20,7 +20,7 @@ createApp({
             this.getEmail();
             if (this.email.length >= 10) {
               console.log("siamo a 10 email");
-              this.emailDaStampare = this.email
+             return this.email
             }
             console.log(this.emailDaStampare);
           })
