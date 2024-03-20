@@ -6,7 +6,7 @@ createApp({
       apiUrl: "https://flynn.boolean.careers/exercises/api/random/mail",
       counter: 0,
       email: [],
-      emailDaStampare: []
+
     };
   },
 
@@ -18,11 +18,6 @@ createApp({
             this.email.push(res.data.response);
             this.counter++;
             this.getEmail();
-            if (this.email.length >= 10) {
-              console.log("siamo a 10 email");
-             return this.email
-            }
-            console.log(this.emailDaStampare);
           })
           .catch(error => {
             console.log(error.message);
